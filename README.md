@@ -1,70 +1,64 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# How to Run this Project
 
-## Available Scripts
+### This Project is made using React (Frontend) and PHP (Backend) by connecting it with MySQL Database.
 
-In the project directory, you can run:
 
-### `npm start`
+## Clone the Project
+```bash
+git clone https://github.com/mejkp-07/LoginRegister-Using_React_PHP_MySQL.git
+```
+## Go inside this Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+cd LoginRegister-Using_React_PHP_MySQL
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ ## Install Packages
 
-### `npm test`
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ ## Run the React Frontend
 
-### `npm run build`
+```bash
+npm start
+```
+ ## View Project in Browser
+```bash
+http://localhost:3000/
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Run the PHP Backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Download and Install XAMPP**
+   - Download XAMPP from [here](https://www.apachefriends.org/download.html).
+   - Follow the installation instructions on the website.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Copy `insert.php` File**
+   - Locate the `insert.php` file.
+   - Copy the file and paste it in `C:\xampp\htdocs`.
 
-### `npm run eject`
+3. **Start Apache Server**
+   - Open the XAMPP Control Panel.
+   - Start the Apache Server.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Notes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `insert.php` accesses the MySQL server running locally. It executes a query to save data in the database when you register someone from the UI (frontend). Therefore, your local MySQL server should be running. So, it is acting as a bridge between frontend and backend. You can see your server running status from "Services" in Start menu.
+- You can see the changes after registering from MySQL Workbench (it is used to manage our database). 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Remember:** 
+- Create a `Register` table with the required schema before saving your data or executing your PHP file.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Important Note
 
-## Learn More
+If you have any problem in running fronend (npm start) then there must be conflict between the packages you have installed. To resove it you can run:-
+```bash
+npm audit fix
+```
+```bash
+npm audit fix --force
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
